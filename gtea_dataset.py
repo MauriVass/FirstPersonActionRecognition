@@ -47,10 +47,10 @@ def sequential_frame_sampler(start, end, seq_len, starting_seq):
         return np.arange(start, seq_len)
     elif starting_seq == "center":
         starting_frame = np.ceil((end - seq_len) / 2)
-        return starting_frame + np.arange(start, seq_len)
+        return int(starting_frame) + np.arange(start, seq_len, dtype=int)
     else:
         starting_frame = random.randint(start, end - seq_len)
-        return starting_frame + np.arange(start, seq_len)
+        return int(starting_frame) + np.arange(start, seq_len, dtype=int)
 
 
 def gtea61(data_type, root, split='train', user_split=None, seq_len_rgb=7, seq_len_flow=5, transform_rgb=None, transform_flow=None, preload=False, *args, **kwargs):
@@ -165,10 +165,13 @@ class GTEA61Flow(GTEA61):
         if self.preloaded:
             self.loaded_frames = []  # holds preloaded sequences of images
             for video_x_instance_path, video_y_instance_path in zip(self.video_x_paths, self.video_x_paths):
-                x_frames = self.load_frames(video_x_instance_path, self.frame_sampler, "L")
-                y_frames = self.load_frames(video_y_instance_path, self.frame_sampler, "L")
-                stacked_frames = np.ravel(np.column_stack((x_frames, y_frames)))
-                self.loaded_frames.append(self.load_frames(stacked_frames, self.frame_sampler, "L", self.starting_seq))
+                x_frames = self.load_frames(video_x_instance_path, self.frame_sampler, "L", self.starting_seq)
+                y_frames = self.load_frames(video_y_instance_path, self.frame_sampler, "L", self.starting_seq)
+                stacked_frames = [None]*(len(x_frames)+len(y_frames))
+                stacked_frames[::2] = x_frames
+                stacked_frames[1::2] = y_frames
+                # self.loaded_frames.append(self.load_frames(stacked_frames, self.frame_sampler, "L", self.starting_seq))
+                self.loaded_frames.append(stacked_frames)
 
     def __getitem__(self, index):
         if self.preloaded:

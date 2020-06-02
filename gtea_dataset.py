@@ -62,7 +62,7 @@ def gtea61(data_type, root, split='train', user_split=None, seq_len_rgb=7, seq_l
             user_split = [1, 3, 4]
         else:
             user_split = [2]
-    pass  # TODO
+
     if data_type == "rgb":
         return GTEA61_RGB(root, split, user_split, seq_len_rgb, preload, transform_rgb, *args, **kwargs)
     elif data_type == "flow":
@@ -70,7 +70,7 @@ def gtea61(data_type, root, split='train', user_split=None, seq_len_rgb=7, seq_l
     elif data_type == "joint":  # both rgb and flow
         return GTEA61_2Stream(root, split, user_split, seq_len_rgb, seq_len_flow, preload, transform_rgb, transform_flow, *args, **kwargs)
     elif data_type == "ms":  # both rgb and ms
-        pass # TODO
+        pass  # TODO
 
 
 class GTEA61(VisionDataset):
@@ -194,7 +194,7 @@ class GTEA61Flow(GTEA61):
 class GTEA61_2Stream():
     def __init__(self, root, split, user_split, seq_len_rgb, seq_len_flow, preload=False, transform_rgb=None, transform_flow=None, target_transform=None, frame_sampler_rgb=None, frame_sampler_flow=None):
         self.rgb_dataset = GTEA61_RGB(root, split, user_split, seq_len_rgb, preload=preload, transform=transform_rgb, frame_sampler=frame_sampler_rgb)
-        self.flow_dataset = GTEA61_RGB(root, split, user_split, seq_len_flow, preload=preload, transform=transform_flow, frame_sampler=frame_sampler_flow)
+        self.flow_dataset = GTEA61Flow(root, split, user_split, seq_len_flow, preload=preload, transform=transform_flow, frame_sampler=frame_sampler_flow)
         self.split = split
         self.root = root
         self.user_split = self.rgb_dataset.user_split

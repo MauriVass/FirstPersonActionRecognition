@@ -8,8 +8,7 @@ import os
 import sys
 import torch
 from time import time
-IMAGE = 0
-LABEL = 1
+
 # directory containing the x-flows frames
 FLOW_X_DIR = "flow_x_processed"
 # directory containing the y-flows frames

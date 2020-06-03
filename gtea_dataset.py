@@ -7,7 +7,7 @@ import random
 import os
 import sys
 import torch
-
+from time import time
 IMAGE = 0
 LABEL = 1
 # directory containing the x-flows frames
@@ -41,7 +41,7 @@ def uniform_frame_sampler(start, end, seq_len):
     return np.linspace(start, end, seq_len, endpoint=False, dtype=int)
 
 
-def sequential_frame_sampler(start, end, seq_len, starting_seq):
+def sequential_frame_sampler(start, end, seq_len, starting_seq, seed=None):
     # starting_frame mode is either first, center, or random
     if starting_seq == "first":
         return np.arange(start, seq_len)
@@ -49,8 +49,14 @@ def sequential_frame_sampler(start, end, seq_len, starting_seq):
         starting_frame = np.ceil((end - seq_len) / 2)
         return int(starting_frame) + np.arange(start, seq_len, dtype=int)
     else:
+        if seed is not None:
+            random.seed(seed)
         starting_frame = random.randint(start, end - seq_len)
         return int(starting_frame) + np.arange(start, seq_len, dtype=int)
+
+
+def allin_frame_sampler(start, end, seq_len):
+    return list(range(start, end))
 
 
 def gtea61(data_type, root, split='train', user_split=None, seq_len_rgb=7, seq_len_flow=5, transform_rgb=None, transform_flow=None, preload=False, *args, **kwargs):
@@ -151,9 +157,9 @@ class GTEA61Flow(GTEA61):
         super().__init__(root, split, user_split, seq_len, preload, transform=transform, target_transform=target_transform)
         # frames are taken sequentially by defult, pass a callback to overwrite the sampling method
         # such callback is to generate indices corresponding to the frames to be sampled
+        self.split = split
         if frame_sampler is None:
             self.frame_sampler = sequential_frame_sampler
-        self.split = split
         if self.split == "train":
             self.starting_seq = "random"
         else:
@@ -162,25 +168,38 @@ class GTEA61Flow(GTEA61):
         self.build_metadata(FLOW_X_DIR, self.video_x_paths)
         self.video_y_paths = [path.replace("flow_x_processed", "flow_y_processed") for path in self.video_x_paths]
 
+
         if self.preloaded:
-            self.loaded_frames = []  # holds preloaded sequences of images
+            self.loaded_x_frames = []
+            self.loaded_y_frames = []
             for video_x_instance_path, video_y_instance_path in zip(self.video_x_paths, self.video_x_paths):
-                x_frames = self.load_frames(video_x_instance_path, self.frame_sampler, "L", self.starting_seq)
-                y_frames = self.load_frames(video_y_instance_path, self.frame_sampler, "L", self.starting_seq)
-                stacked_frames = [None]*(len(x_frames)+len(y_frames))
-                stacked_frames[::2] = x_frames
-                stacked_frames[1::2] = y_frames
-                # self.loaded_frames.append(self.load_frames(stacked_frames, self.frame_sampler, "L", self.starting_seq))
-                self.loaded_frames.append(stacked_frames)
+                if self.starting_seq == "random":  # loads in all frames, will be sampled when requested
+                    x_frames = self.load_frames(video_x_instance_path, allin_frame_sampler, "L")
+                    y_frames = self.load_frames(video_y_instance_path, allin_frame_sampler, "L")
+                else:  # loads in only necessary frames
+                    x_frames = self.load_frames(video_x_instance_path, self.frame_sampler, "L", self.starting_seq)
+                    y_frames = self.load_frames(video_y_instance_path, self.frame_sampler, "L", self.starting_seq)
+                self.loaded_x_frames.append(x_frames)
+                self.loaded_y_frames.append(y_frames)
 
     def __getitem__(self, index):
         if self.preloaded:
-            stacked_frames = self.loaded_frames[index]
-        else:
+            if self.starting_seq == "random":  # randomly sample the loaded frames
+                num_frames = len(self.loaded_x_frames[index])
+                sampled_frames = self.frame_sampler(0, num_frames, self.seq_len, "random")
+                stacked_frames = [frames[i] for i in sampled_frames for frames in (self.loaded_x_frames[index], self.loaded_y_frames[index])]
+            else:  # frames are loaded and sampled, just stack them
+                x_frames, y_frames = self.loaded_x_frames[index], self.loaded_y_frames[index]
+                stacked_frames = [frames[i] for i in range(len(x_frames)) for frames in (x_frames, y_frames)]
+        else:  # sample and load the frames
+            seed = time()
             x_path, y_path = self.video_x_paths[index], self.video_y_paths[index]
-            x_frames = self.load_frames(x_path, self.frame_sampler, "L", self.starting_seq)
-            y_frames = self.load_frames(y_path, self.frame_sampler, "L", self.starting_seq)
-            stacked_frames = np.ravel(np.column_stack((x_frames, y_frames)))
+            x_frames = self.load_frames(x_path, self.frame_sampler, "L", self.starting_seq, seed)
+            y_frames = self.load_frames(y_path, self.frame_sampler, "L", self.starting_seq, seed)
+            stacked_frames = [frames[i] for i in range(len(x_frames)) for frames in (x_frames, y_frames)]
+            # stacked_frames = [None] * (len(x_frames) + len(y_frames))
+            # stacked_frames[::2] = x_frames
+            # stacked_frames[1::2] = y_frames
         self.transform.randomize_parameters()
         # x frames are transformed differently from y frames
         frames = [self.transform(image, inv=True, flow=True) if i % 2 == 0 else self.transform(image, inv=False, flow=True) for i, image in enumerate(stacked_frames)]

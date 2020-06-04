@@ -18,14 +18,14 @@ RGB_DIR = "processed_frames2"
 
 
 """"
-    Datasets are to be built by calling gtea61() and passing, among other arguments, 
+    Datasets are to be built by calling gtea61() and passing, among other arguments,
     the type of dataset to build.
     Allowed types are:
         rgb:    rgb frames
         flow:   warp-flow frames
         ms:     rgb + motion-segmentation frames
-        joint:  rgb + warp-flow frames for the joint training 
-    Note that if your RAM allows it, you can pass preload=True to preload the frames and 
+        joint:  rgb + warp-flow frames for the joint training
+    Note that if your RAM allows it, you can pass preload=True to preload the frames and
     speed up item retrieval during training.
 """
 
@@ -75,7 +75,7 @@ def gtea61(data_type, root, split='train', user_split=None, seq_len_rgb=7, seq_l
     elif data_type == "joint":  # both rgb and flow
         return GTEA61_2Stream(root, split, user_split, seq_len_rgb, seq_len_flow, preload, transform_rgb, transform_flow, *args, **kwargs)
     elif data_type == "ms":  # both rgb and ms
-        pass  # TODO
+        return GTEA61_MS(root, split, user_split, seq_len_rgb, preload, transform_rgb, *args, **kwargs)
 
 
 class GTEA61(VisionDataset):
@@ -149,7 +149,6 @@ class GTEA61_RGB(GTEA61):
 
     def __len__(self):
         return len(self.video_paths)
-
 
 class GTEA61Flow(GTEA61):
     def __init__(self, root, split, user_split, seq_len, preload=False, transform=None, target_transform=None, frame_sampler=None):
@@ -233,3 +232,41 @@ class GTEA61_2Stream():
 
     def __len__(self):
         return len(self.rgb_dataset)
+
+
+class GTEA61_MS(GTEA61):
+    def __init__(self, root, split, user_split, seq_len, preload=False, transform=None, target_transform=None, frame_sampler=None):
+        super().__init__(root, split, user_split, seq_len, preload, transform=transform, target_transform=target_transform)
+        # frames are taken uniformly spaced by defult, pass a callback to overwrite the sampling method
+        # such callback is to generate indices corresponding to the frames to be sampled
+        if frame_sampler is None:
+            self.frame_sampler = uniform_frame_sampler
+        self.video_paths = []  # holds a path for each video
+        self.build_metadata(RGB_DIR, self.video_paths)
+
+        if self.preloaded:
+            self.loaded_frames = []  # holds preloaded sequences of images
+            self.loaded_maps = []
+            for video_instance_path in self.video_paths:
+                frames_path = os.path.join(video_instance_path, "rgb")
+                self.loaded_frames.append(self.load_frames(frames_path, self.frame_sampler, "RGB"))
+
+                maps_path = os.path.join(video_instance_path, "mmaps")
+                self.loaded_maps.append(self.load_frames(maps_path, self.frame_sampler, "L"))
+
+    def __getitem__(self, index):
+        if self.preloaded:
+            frames = self.loaded_frames[index]
+            maps = self.loaded_maps[index]
+        else:
+            frames = self.load_frames(self.video_paths[index], self.frame_sampler, "RGB")
+            maps = self.load_frames(self.video_paths[index], self.frame_sampler, "L")
+        self.transform.randomize_parameters()
+        frames = [self.transform(image) for image in frames]
+        maps = [self.transform(image) for image in maps]
+        sequence = torch.stack(frames, 0)
+        sequence_maps = torch.stack(maps, 0)
+        return sequence, self.labels[index], sequence_maps
+
+    def __len__(self):
+        return len(self.video_paths)

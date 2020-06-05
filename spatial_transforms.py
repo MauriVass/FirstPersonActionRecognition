@@ -35,6 +35,34 @@ class Compose(object):
             t.randomize_parameters()
 
 
+class ConditionalCompose(object):
+    """Composes several transforms together.
+    Args:
+        transforms (list of ``Transform`` objects): list of transforms to compose.
+    Example:
+        >>> transforms.Compose([
+        >>>     transforms.CenterCrop(10),
+        >>>     transforms.ToTensor(),
+        >>> ])
+        The additional conditions arg allows to turn on or off certain transformations.
+    """
+
+    def __init__(self, transforms):
+        self.transforms = transforms
+
+    def __call__(self, img, inv=False, flow=False, conditions=None):
+        if conditions is None:
+            conditions = [True] * len(self.transforms)
+        for condition, t in zip(conditions, self.transforms):
+            if condition:
+                img = t(img, inv, flow)
+        return img
+
+    def randomize_parameters(self):
+        for t in self.transforms:
+            t.randomize_parameters()
+
+
 class ToTensor(object):
     """Convert a ``PIL.Image`` or ``numpy.ndarray`` to tensor.
     Converts a PIL.Image or numpy.ndarray (H x W x C) in the range
@@ -218,6 +246,21 @@ class RandomHorizontalFlip(object):
 
     def randomize_parameters(self):
         self.p = random.random()
+
+
+class ToBinaryMap(object):
+    """"Converts gray scale MS map tensor to binary MS map tensor"""
+
+    def __init__(self, threshold=0.5):
+        self.threshold = threshold
+
+    def __call__(self, tensor, *args, **kwargs):
+        tensor[tensor >= self.threshold] = 1
+        tensor[tensor < self.threshold] = 0
+        return tensor.long()
+
+    def randomize_parameters(self):
+        pass
 
 
 class MultiScaleCornerCrop(object):

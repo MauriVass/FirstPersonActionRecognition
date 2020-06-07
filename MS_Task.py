@@ -22,7 +22,7 @@ from datetime import datetime
 from utils import Config, test
 from gtea_dataset import gtea61
 # %%
-# !wandb login 
+# !wandb login
 # %%
 
 config_stage2_ms = Config({"stage": 2,
@@ -34,9 +34,10 @@ config_stage2_ms = Config({"stage": 2,
                            "batch_size": 32,
                            "lstm_mem_size": 512,
                            "lr": 1e-4,
+                           "ms_lr": 1e-4,
                            "optimizer": "adam",
-                           "epochs": 150,
-                           "decay_steps": [25, 75],
+                           "epochs": 500,
+                           "decay_steps": [498, 499],
                            "decay_factor": 0.1,
                            "weight_decay": 5e-5,
                            "val_frequency": 3,
@@ -44,7 +45,7 @@ config_stage2_ms = Config({"stage": 2,
                            "seq_len": 7,
                            "training_user_split": [1, 3, 4],
                            "val_user_split": [2]})
-
+#%%
 
 def prepare_training_ms(config):
     train_params_rgb = []
@@ -140,17 +141,18 @@ def training_ms(model, config, train_loader, val_loader):
         model.ms_classifier.train(True)
         for inputs_rgb, map_labels, labels in train_loader:
             num_samples = inputs_rgb.size(0)
+            trainSamples += num_samples
             train_iter += 1
             iterPerEpoch += 1
             optimizer_fn.zero_grad()
-            trainSamples += inputs_rgb.size(0)
             inputs_rgb = inputs_rgb.permute(1, 0, 2, 3, 4).to(config.device)  # but why?
             labels = labels.to(config.device)
-            map_labels = map_labels.to(config.device)
-            output_label, _, output_map = model(inputs_rgb) # output_map is BSx2x7x7
-            map_labels = map_labels.view(num_samples * config.seq_len * 49)
-            output_map = output_map.view(config.seq_len * num_samples * 49, 2)
-            map_pixel_samples += output_map.data.size(0)
+            # map_labels = map_labels.to(config.device)
+            map_labels = map_labels.to(config.device).permute(0, 2, 1, 3, 4).squeeze() # BSxseq_lenx7x7
+            output_label, _, output_map = model(inputs_rgb)  # output_map is BSx2
+            # map_labels = map_labels.view(num_samples * config.seq_len * 49)
+            # output_map = output_map.view(config.seq_len * num_samples * 49, 2)
+            map_pixel_samples += num_samples * config.seq_len * 7 * 7
             loss_rgb = loss_fn_rgb(output_label, labels)
             loss_ms = loss_fn_ms(output_map, map_labels)
             loss = loss_rgb + loss_ms
@@ -201,11 +203,12 @@ def training_ms(model, config, train_loader, val_loader):
                     val_samples += num_samples
                     inputs_rgb = inputs_rgb.permute(1, 0, 2, 3, 4).to(config.device)
                     labels = labels.to(config.device)
-                    map_labels = map_labels.to(config.device)
+                    # map_labels = map_labels.to(config.device)
+                    map_labels = map_labels.to(config.device).view(num_samples, config.seq_len, 7, 7)
                     output_label, _, output_map = model(inputs_rgb)
-                    map_labels = map_labels.view(num_samples * config.seq_len * 49)
-                    output_map = output_map.view(config.seq_len * num_samples * 49, 2)
-                    map_pixel_samples += output_map.data.size(0)
+                    # map_labels = map_labels.view(num_samples * config.seq_len * 49)
+                    # output_map = output_map.view(config.seq_len * num_samples * 49, 2)
+                    map_pixel_samples += num_samples * config.seq_len * 7 * 7
                     val_loss_rgb = loss_fn_rgb(output_label, labels)
                     val_loss_ms = loss_fn_ms(output_map, map_labels)
                     val_loss_epoch_rgb += val_loss_rgb.item()
@@ -252,12 +255,12 @@ transform_ms = Compose(transform_ms_list)
 
 gtea_root = "GTEA61"
 train_dataset = gtea61("ms", gtea_root, split="train", user_split=config.training_user_split, seq_len_rgb=config.seq_len, transform_rgb=transform_rgb, transform_ms=transform_ms, preload=False)
-train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=config.batch_size, shuffle=True, num_workers=0, pin_memory=True)
+train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=config.batch_size, shuffle=True, num_workers=4, pin_memory=True)
 
 val_transform = Compose([Scale(256), CenterCrop(224), ToTensor()])
 val_transform_ms = Compose([Scale(256), CenterCrop(224), Scale(7), ToTensor(), ToBinaryMap(config.binary_mask_threshold)])
 val_dataset = gtea61("ms", gtea_root, split="test", user_split=config.val_user_split, seq_len_rgb=config.seq_len, transform_rgb=val_transform, transform_ms=val_transform_ms, preload=False)
-val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=config.batch_size, shuffle=True, num_workers=0, pin_memory=True)
+val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=config.batch_size, shuffle=True, num_workers=2, pin_memory=True)
 
 
 # %% TRAINING STAGE 2 MS
@@ -271,11 +274,11 @@ model.to(config.device)
 
 loss_fn_rgb = nn.CrossEntropyLoss()
 if config.ms_task == "classifier":
-    loss_fn_ms = nn.CrossEntropyLoss()
+    loss_fn_ms = nn.CrossEntropyLoss(reduction="sum")
 else:
     loss_fn_ms = nn.MSELoss()
 
-optimizer_fn = torch.optim.Adam(train_params_rgb + train_params_ms, lr=config.lr, weight_decay=config.weight_decay, eps=1e-4)
+optimizer_fn = torch.optim.Adam([{'params': train_params_rgb}, {'params': train_params_ms, 'lr': config.ms_lr}], lr=config.lr, weight_decay=config.weight_decay, eps=1e-4)
 optim_scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer_fn, milestones=config.decay_steps, gamma=config.decay_factor)
 
 

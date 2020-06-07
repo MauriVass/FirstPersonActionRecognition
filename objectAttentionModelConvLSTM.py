@@ -55,14 +55,14 @@ class attentionModel(nn.Module):
                 if self.compute_cam:
                     ms_out = self.ms_conv(attentionFeat)
                 else:
-                    ms_out = self.ms_conv(feature_conv)
-                ms_out = torch.flatten(ms_out, 1)
-                ms_out = self.ms_classifier(ms_out)
-                ms_out = ms_out.view(inputVariable.size(1), 2, 7, 7)  # ms_out = ms_out.view(inputVariable.size(1), 49, 2)
+                    ms_out = self.ms_conv(feature_conv)  # BSx100x7x7
+                ms_out = torch.flatten(ms_out, 1)  # BSx4900
+                ms_out = self.ms_classifier(ms_out)  # BSx98
+                ms_out = ms_out.view(inputVariable.size(1), 2, 7, 7)  # ms_out = ms_out.view(inputVariable.size(1), 49, 2)  #  #BSX2x7x7
                 # ms_out = F.softmax(ms_out, dim=2)
                 ms_outputs.append(ms_out)
 
-        ms_outputs = torch.stack(ms_outputs, 0) # sape is seq_len x BSx2x7x7, is a good idea to stack over seq_len?
+        ms_outputs = torch.stack(ms_outputs, 2) # BSxseq_lenx2x7x7
         feats1 = self.avgpool(state[1]).view(state[1].size(0), -1)
         feats = self.classifier(feats1)
         if self.include_ms:

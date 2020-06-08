@@ -20,9 +20,10 @@ class attentionModel(nn.Module):
         self.classifier = nn.Sequential(self.dropout, self.fc)
         self.compute_cam = cam
         self.include_ms = ms
+        self.ms_task = ms_task
         if ms:
             self.ms_conv = nn.Sequential(nn.ReLU(), nn.Conv2d(512, 100, 1))
-            if ms_task == "classifier":  # ms_task either classifier or regressor
+            if self.ms_task == "classifier":  # ms_task either classifier or regressor
                 self.ms_classifier = nn.Sequential(nn.Linear(4900, 98))
             else:  # regressor
                 self.ms_classifier = nn.Sequential(nn.Linear(4900, 49))
@@ -58,12 +59,17 @@ class attentionModel(nn.Module):
                     ms_out = self.ms_conv(feature_conv)  # BSx100x7x7
                 ms_out = torch.flatten(ms_out, 1)  # BSx4900
                 ms_out = self.ms_classifier(ms_out)  # BSx98
-                ms_out = ms_out.view(inputVariable.size(1), 2, 7, 7)  # ms_out = ms_out.view(inputVariable.size(1), 49, 2)  #  #BSX2x7x7
+                if self.ms_task == "classifier":
+                    ms_out = ms_out.view(inputVariable.size(1), 2, 7, 7)  # ms_out = ms_out.view(inputVariable.size(1), 49, 2)  #  #BSX2x7x7
+                else:
+                    ms_out = ms_out.view(inputVariable.size(1), 1, 7, 7)
                 # ms_out = F.softmax(ms_out, dim=2)
                 ms_outputs.append(ms_out)
 
-        ms_outputs = torch.stack(ms_outputs, 2) # BSxseq_lenx2x7x7
         feats1 = self.avgpool(state[1]).view(state[1].size(0), -1)
         feats = self.classifier(feats1)
         if self.include_ms:
+            ms_outputs = torch.stack(ms_outputs, 2) # BSxseq_lenx2x7x7
             return feats, feats1, ms_outputs
+        else:
+            return feats, feats1

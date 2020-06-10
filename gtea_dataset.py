@@ -7,7 +7,7 @@ import random
 import os
 import sys
 import torch
-from time import time
+import time
 import pandas as pd
 
 # directory containing the x-flows frames
@@ -38,12 +38,24 @@ def pil_loader(path, image_type):  # type is eiter RGB or L
 
 def entropy_based_frame_sampler(start, end, seq_len, path):
     if random.random() >= 0.5:
-        print("Entropy based\n\n\n\n")
-        header_list = ["PreviousFrame", "CurrentFrame", "PreviousImageFilename", "CurrentImageFilename", "Entropy"]
-        entropies = pd.read_csv("entropies/" + path + "entropies.txt", names = header_list).sort_values(by=['Entropy'], ascending = False)
-        return [int(frame) for frame in entropies[:seq_len].sort_values(by=['CurrentFrame']).CurrentFrame]
+
+        path.replace("mmaps", "rgb")
+        path.replace("map", "rgb")
+
+        entropies = pd.read_csv("entropies/" + path + "/entropies.txt")
+        entropies_sorted = entropies.sort_values(by=entropies.columns[4], ascending = False)[:seq_len]
+
+        frames = [
+          frame[1] for frame in entropies_sorted.values.tolist()
+        ]
+
+        if (len(frames) < seq_len):
+          return uniform_frame_sampler(start, end, seq_len, path)
+
+        return np.array(sorted(frames))
+
     else:
-        return uniform_frame_sampler(start, end, seq_len)
+        return uniform_frame_sampler(start, end, seq_len, path)
     return
 
 
@@ -90,7 +102,7 @@ def gtea61(data_type, root, split='train', user_split=None, seq_len_rgb=7, seq_l
 
 
 class GTEA61(VisionDataset):
-    def __init__(self, root, split, user_split, seq_len, preload, entropies = "entropies", transform=None, target_transform=None, *args, **kwargs):
+    def __init__(self, root, split, user_split, seq_len, preload, transform=None, target_transform=None, *args, **kwargs):
         super().__init__(root, transform=transform, target_transform=target_transform)
         self.root_dir = root
         self.split = split
@@ -100,7 +112,6 @@ class GTEA61(VisionDataset):
         self.labels = []    # labels[i] holds the class id of the video i
         self.preloaded = preload  # if true, images will be pre-loaded into memory
         self.transform = transform
-        self.entropies_dir = entropies_dir
 
     def build_metadata(self, data_main_path, paths_holder):
         #  builds and stores paths for each video instance
@@ -137,7 +148,7 @@ class GTEA61_RGB(GTEA61):
         # such callback is to generate indices corresponding to the frames to be sampled
         if frame_sampler is None:
             self.frame_sampler = uniform_frame_sampler
-        else if frame_sampler == "entropy_based":
+        elif frame_sampler == "entropy_based":
             self.frame_sampler = entropy_based_frame_sampler
 
         self.video_paths = []  # holds a path for each video
@@ -171,7 +182,7 @@ class GTEA61Flow(GTEA61):
         self.split = split
         if frame_sampler is None:
             self.frame_sampler = sequential_frame_sampler
-        else if frame_sampler == "entropy_based":
+        elif frame_sampler == "entropy_based":
             self.frame_sampler = entropy_based_frame_sampler
 
         if self.split == "train":
@@ -256,7 +267,7 @@ class GTEA61_MS(GTEA61):
         # such callback is to generate indices corresponding to the frames to be sampled
         if frame_sampler is None:
             self.frame_sampler = uniform_frame_sampler
-        else if frame_sampler == "entropy_based":
+        elif frame_sampler == "entropy_based":
             self.frame_sampler = entropy_based_frame_sampler
 
         self.video_paths = []  # holds a path for each video

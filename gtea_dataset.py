@@ -38,6 +38,7 @@ def pil_loader(path, image_type):  # type is eiter RGB or L
 
 def entropy_based_frame_sampler(start, end, seq_len, path):
     if random.random() >= 0.5:
+        print("Entropy based\n\n\n\n")
         header_list = ["PreviousFrame", "CurrentFrame", "PreviousImageFilename", "CurrentImageFilename", "Entropy"]
         entropies = pd.read_csv("entropies/" + path + "entropies.txt", names = header_list).sort_values(by=['Entropy'], ascending = False)
         return [int(frame) for frame in entropies[:seq_len].sort_values(by=['CurrentFrame']).CurrentFrame]
@@ -128,9 +129,6 @@ class GTEA61(VisionDataset):
 
     def __len__(self):
         raise NotImplementedError  # MUST override
-
-
-
 
 class GTEA61_RGB(GTEA61):
     def __init__(self, root, split, user_split, seq_len, preload=False, transform=None, target_transform=None, frame_sampler=None):

@@ -8,6 +8,7 @@ import os
 import sys
 import torch
 from time import time
+import pandas as pd
 
 # directory containing the x-flows frames
 FLOW_X_DIR = "flow_x_processed"
@@ -18,14 +19,14 @@ RGB_DIR = "processed_frames2"
 
 
 """"
-    Datasets are to be built by calling gtea61() and passing, among other arguments, 
+    Datasets are to be built by calling gtea61() and passing, among other arguments,
     the type of dataset to build.
     Allowed types are:
         rgb:    rgb frames
         flow:   warp-flow frames
         ms:     rgb + motion-segmentation frames
-        joint:  rgb + warp-flow frames for the joint training 
-    Note that if your RAM allows it, you can pass preload=True to preload the frames and 
+        joint:  rgb + warp-flow frames for the joint training
+    Note that if your RAM allows it, you can pass preload=True to preload the frames and
     speed up item retrieval during training.
 """
 
@@ -35,12 +36,21 @@ def pil_loader(path, image_type):  # type is eiter RGB or L
         img = Image.open(f)
         return img.convert(image_type)
 
+def entropy_based_frame_sampler(start, end, seq_len, path):
+    if random.random() >= 0.5:
+        header_list = ["PreviousFrame", "CurrentFrame", "PreviousImageFilename", "CurrentImageFilename", "Entropy"]
+        entropies = pd.read_csv("entropies/" + path + "entropies.txt", names = header_list).sort_values(by=['Entropy'], ascending = False)
+        return [int(frame) for frame in entropies[:seq_len].sort_values(by=['CurrentFrame']).CurrentFrame]
+    else:
+        return uniform_frame_sampler(start, end, seq_len)
+    return
 
-def uniform_frame_sampler(start, end, seq_len):
+
+def uniform_frame_sampler(start, end, seq_len, path):
     return np.linspace(start, end, seq_len, endpoint=False, dtype=int)
 
 
-def sequential_frame_sampler(start, end, seq_len, starting_seq, seed=None):
+def sequential_frame_sampler(start, end, seq_len, starting_seq, path, seed=None):
     # starting_frame mode is either first, center, or random
     if starting_seq == "first":
         return np.arange(start, seq_len)
@@ -63,7 +73,7 @@ def gtea61(data_type, root, split='train', user_split=None, seq_len_rgb=7, seq_l
     if user_split is None:
         #  select users to source data from (out of [S1, S2, S3, S4])
         #  if no split is provided, it defaults to standard split
-        if split == "trian":
+        if split == "train":
             user_split = [1, 3, 4]
         else:
             user_split = [2]
@@ -79,7 +89,7 @@ def gtea61(data_type, root, split='train', user_split=None, seq_len_rgb=7, seq_l
 
 
 class GTEA61(VisionDataset):
-    def __init__(self, root, split, user_split, seq_len, preload, transform=None, target_transform=None, *args, **kwargs):
+    def __init__(self, root, split, user_split, seq_len, preload, entropies = "entropies", transform=None, target_transform=None, *args, **kwargs):
         super().__init__(root, transform=transform, target_transform=target_transform)
         self.root_dir = root
         self.split = split
@@ -89,6 +99,7 @@ class GTEA61(VisionDataset):
         self.labels = []    # labels[i] holds the class id of the video i
         self.preloaded = preload  # if true, images will be pre-loaded into memory
         self.transform = transform
+        self.entropies_dir = entropies_dir
 
     def build_metadata(self, data_main_path, paths_holder):
         #  builds and stores paths for each video instance
@@ -109,7 +120,7 @@ class GTEA61(VisionDataset):
         # loads the sequence of images for the video in path according to the frame_sampler
         frames = np.array(sorted(os.listdir(path)))
         frames_num = len(frames)
-        sampled_frames = frames[frame_sampler(0, frames_num, self.seq_len, *args)]
+        sampled_frames = frames[frame_sampler(0, frames_num, self.seq_len, path, *args)]
         return [pil_loader(os.path.join(path, file_path), image_type) for file_path in sampled_frames]
 
     def __getitem__(self, index):
@@ -166,7 +177,6 @@ class GTEA61Flow(GTEA61):
         self.video_x_paths = []  # holds a path for each x flow video
         self.build_metadata(FLOW_X_DIR, self.video_x_paths)
         self.video_y_paths = [path.replace("flow_x_processed", "flow_y_processed") for path in self.video_x_paths]
-
 
         if self.preloaded:
             self.loaded_x_frames = []

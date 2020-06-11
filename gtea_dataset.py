@@ -37,7 +37,9 @@ def pil_loader(path, image_type):  # type is eiter RGB or L
         return img.convert(image_type)
 
 def entropy_based_frame_sampler(start, end, seq_len, path):
-    if random.random() >= 0.5:
+    random_value = random.random()
+
+    if random_value >= 0 and random_value <= 0.33:
 
         path.replace("mmaps", "rgb")
         path.replace("map", "rgb")
@@ -54,8 +56,24 @@ def entropy_based_frame_sampler(start, end, seq_len, path):
 
         return np.array(sorted(frames))
 
-    else:
+    elif random_value > 0.33 and random_value <= 0.66:
         return uniform_frame_sampler(start, end, seq_len, path)
+
+    elif random_value > 0.66 and random_value <= 1:
+
+        path.replace("mmaps", "rgb")
+        path.replace("map", "rgb")
+
+        entropies = pd.read_csv("entropies/" + path + "/entropies.txt")
+        entropies_sorted = entropies.sort_values(by=entropies.columns[4], ascending = True)[:seq_len]
+
+        frames = [
+          frame[1] for frame in entropies_sorted.values.tolist()
+        ]
+
+        if (len(frames) < seq_len):
+          return uniform_frame_sampler(start, end, seq_len, path)
+        return np.array(sorted(frames))
     return
 
 

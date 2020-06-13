@@ -1,0 +1,17 @@
+0, 1, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0002.png', 6.152684986122223
+1, 2, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0003.png', 6.1946351094726975
+2, 3, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0004.png', 5.990261928120643
+3, 4, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0005.png', 5.818027147500685
+4, 5, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0006.png', 5.626662282107389
+5, 6, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0007.png', 5.289940131568174
+6, 7, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0008.png', 4.949262378226966
+7, 8, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0009.png', 5.1798053636834815
+8, 9, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0010.png', 4.853333525570836
+9, 10, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0011.png', 4.932556261078606
+10, 11, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0012.png', 4.792722088824913
+11, 12, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0013.png', 4.735133063494816
+12, 13, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0013.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0014.png', 4.754289504562772
+13, 14, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0014.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0015.png', 5.4237128004106605
+14, 15, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0015.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0016.png', 5.473090711672724
+15, 16, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0016.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0017.png', 5.548795146429325
+16, 17, './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0017.png', './GTEA61/processed_frames2/S4/close_mustard/1/rgb/rgb0018.png', 5.687147548362311

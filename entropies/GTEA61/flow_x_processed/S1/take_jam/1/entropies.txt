@@ -1,0 +1,14 @@
+0, 1, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00001.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00002.png', 4.845755980377197
+1, 2, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00002.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00003.png', 4.852327624496235
+2, 3, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00003.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00004.png', 5.843590323637692
+3, 4, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00004.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00005.png', 4.793379464580855
+4, 5, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00005.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00006.png', 4.764763614643314
+5, 6, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00006.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00007.png', 5.270506849624506
+6, 7, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00007.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00008.png', 4.715560290539089
+7, 8, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00008.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00009.png', 6.119663878866193
+8, 9, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00009.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00010.png', 5.4493194673808425
+9, 10, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00010.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00011.png', 5.905446736000781
+10, 11, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00011.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00012.png', 5.137082554581491
+11, 12, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00012.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00013.png', 5.214558705155734
+12, 13, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00013.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00014.png', 5.35581894911956
+13, 14, './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00014.png', './GTEA61/flow_x_processed/S1/take_jam/1/flow_x_00015.png', 4.527835818659357

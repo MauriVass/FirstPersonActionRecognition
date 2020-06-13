@@ -1,0 +1,15 @@
+0, 1, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0001.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0002.png', 0.4388666555097508
+1, 2, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0002.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0003.png', 0.4170261867205006
+2, 3, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0003.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0004.png', 0.38673400864097374
+3, 4, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0004.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0005.png', 0.46937647844580377
+4, 5, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0005.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0006.png', 0.49927341684651755
+5, 6, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0006.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0007.png', 0.5259308239446236
+6, 7, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0007.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0008.png', -0.0
+7, 8, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0008.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0009.png', -0.0
+8, 9, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0009.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0010.png', -0.0
+9, 10, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0010.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0011.png', 0.5755121030620006
+10, 11, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0011.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0012.png', 0.4173511506182054
+11, 12, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0012.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0013.png', 0.4285921166653467
+12, 13, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0013.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0014.png', 0.5267492638485447
+13, 14, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0014.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0015.png', 0.5871721510040899
+14, 15, './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0015.png', './GTEA61/processed_frames2/S2/take_peanut/1/mmaps/map0016.png', 0.5575464813779489

@@ -1,0 +1,17 @@
+0, 1, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00001.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00002.png', 5.523771273560188
+1, 2, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00002.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00003.png', 5.64349020358545
+2, 3, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00003.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00004.png', 5.834259902325043
+3, 4, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00004.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00005.png', 6.407863390090312
+4, 5, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00005.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00006.png', 6.330926206731153
+5, 6, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00006.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00007.png', 5.733914059366909
+6, 7, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00007.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00008.png', 5.5133785376507864
+7, 8, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00008.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00009.png', 6.053755874409593
+8, 9, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00009.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00010.png', 5.990669939589368
+9, 10, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00010.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00011.png', 6.74461817515425
+10, 11, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00011.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00012.png', 6.479931047665796
+11, 12, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00012.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00013.png', 6.251500397060901
+12, 13, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00013.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00014.png', 7.416369470804238
+13, 14, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00014.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00015.png', 6.616801222361191
+14, 15, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00015.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00016.png', 6.64659065587974
+15, 16, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00016.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00017.png', 6.07052503335878
+16, 17, './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00017.png', './GTEA61/flow_x_processed/S3/take_peanut/1/flow_x_00018.png', 6.355173618150157

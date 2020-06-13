@@ -1,0 +1,5 @@
+0, 1, './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0001.png', './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0002.png', 4.972332944108445
+1, 2, './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0002.png', './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0003.png', 4.97596131115634
+2, 3, './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0003.png', './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0004.png', 4.4067548620156956
+3, 4, './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0004.png', './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0005.png', 4.784738283362994
+4, 5, './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0005.png', './GTEA61/processed_frames2/S4/pour_sugar,spoon,cup/2/rgb/rgb0006.png', 5.0234015996114545

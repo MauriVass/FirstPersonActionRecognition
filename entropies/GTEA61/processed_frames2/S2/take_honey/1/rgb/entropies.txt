@@ -1,0 +1,14 @@
+0, 1, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0002.png', 6.053798516414598
+1, 2, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0003.png', 5.7378737638043145
+2, 3, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0004.png', 5.870695858378928
+3, 4, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0005.png', 5.640280078539596
+4, 5, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0006.png', 5.666543968871187
+5, 6, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0007.png', 5.612737734138478
+6, 7, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0008.png', 5.619595062127661
+7, 8, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0009.png', 5.4677948541640475
+8, 9, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0010.png', 5.50276749448159
+9, 10, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0011.png', 5.642239994499755
+10, 11, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0012.png', 5.832097545695218
+11, 12, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0013.png', 5.970675642713554
+12, 13, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0013.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0014.png', 6.349278306191245
+13, 14, './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0014.png', './GTEA61/processed_frames2/S2/take_honey/1/rgb/rgb0015.png', 6.516802726046295

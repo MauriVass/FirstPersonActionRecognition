@@ -1,0 +1,14 @@
+0, 1, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0002.png', 5.625447773599337
+1, 2, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0003.png', 5.5959845225075435
+2, 3, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0004.png', 5.998691924818291
+3, 4, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0005.png', 5.889325880866923
+4, 5, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0006.png', 5.752053941679283
+5, 6, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0007.png', 5.654758985062232
+6, 7, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0008.png', 5.701695311290139
+7, 8, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0009.png', 5.727167739094073
+8, 9, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0010.png', 5.506497835808167
+9, 10, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0011.png', 5.863464271540997
+10, 11, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0012.png', 6.204367723916519
+11, 12, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0013.png', 6.34008491991387
+12, 13, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0013.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0014.png', 6.274243772401394
+13, 14, './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0014.png', './GTEA61/processed_frames2/S1/take_mustard/1/rgb/rgb0015.png', 6.175324877666831

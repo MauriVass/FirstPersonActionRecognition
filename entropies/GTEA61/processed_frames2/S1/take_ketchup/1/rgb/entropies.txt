@@ -1,0 +1,16 @@
+0, 1, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0002.png', 5.460016661808427
+1, 2, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0003.png', 5.582017418070855
+2, 3, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0004.png', 5.651907286253605
+3, 4, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0005.png', 5.432630273356939
+4, 5, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0006.png', 5.210004857250474
+5, 6, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0007.png', 5.2736912954897015
+6, 7, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0008.png', 5.3934655501310775
+7, 8, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0009.png', 5.403853226847472
+8, 9, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0010.png', 5.046074097146829
+9, 10, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0011.png', 5.389376024597828
+10, 11, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0012.png', 5.761636996118646
+11, 12, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0013.png', 5.8783166663925455
+12, 13, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0013.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0014.png', 5.858325166899903
+13, 14, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0014.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0015.png', 5.709460379953815
+14, 15, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0015.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0016.png', 6.0960605781544785
+15, 16, './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0016.png', './GTEA61/processed_frames2/S1/take_ketchup/1/rgb/rgb0017.png', 6.282576868676628

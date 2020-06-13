@@ -1,0 +1,11 @@
+0, 1, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00001.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00002.png', 5.4626898968021385
+1, 2, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00002.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00003.png', 5.38109195530786
+2, 3, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00003.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00004.png', 5.351481243886769
+3, 4, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00004.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00005.png', 5.80214893810257
+4, 5, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00005.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00006.png', 5.947457501611748
+5, 6, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00006.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00007.png', 6.309749719940152
+6, 7, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00007.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00008.png', 6.385915568684092
+7, 8, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00008.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00009.png', 6.7945787265977495
+8, 9, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00009.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00010.png', 7.180244406920149
+9, 10, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00010.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00011.png', 6.252447587147087
+10, 11, './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00011.png', './GTEA61/flow_y_processed/S2/close_mayonnaise/1/flow_y_00012.png', 7.623472003288169

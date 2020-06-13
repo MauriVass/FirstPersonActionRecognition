@@ -1,0 +1,17 @@
+0, 1, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0001.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0002.png', 0.33352200393097664
+1, 2, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0002.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0003.png', 0.30130750344427987
+2, 3, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0003.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0004.png', 0.3130386224097837
+3, 4, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0004.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0005.png', 0.24632414064419333
+4, 5, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0005.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0006.png', 0.26280922959344105
+5, 6, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0006.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0007.png', 0.24311033422405598
+6, 7, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0007.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0008.png', 0.2763190961748466
+7, 8, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0008.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0009.png', 0.1776507749908634
+8, 9, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0009.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0010.png', -0.0
+9, 10, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0010.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0011.png', 0.48768193118086206
+10, 11, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0011.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0012.png', 0.3252325720143272
+11, 12, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0012.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0013.png', 0.29415068131383315
+12, 13, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0013.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0014.png', 0.24800212203201374
+13, 14, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0014.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0015.png', 0.2720373832431199
+14, 15, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0015.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0016.png', 0.2522334336360144
+15, 16, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0016.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0017.png', 0.2574690993672866
+16, 17, './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0017.png', './GTEA61/processed_frames2/S4/open_water/3/mmaps/map0018.png', 0.26663127766977446

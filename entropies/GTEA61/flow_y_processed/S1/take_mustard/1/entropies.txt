@@ -1,0 +1,14 @@
+0, 1, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00001.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00002.png', 6.196759259411927
+1, 2, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00002.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00003.png', 5.572206448369332
+2, 3, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00003.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00004.png', 5.047621892397362
+3, 4, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00004.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00005.png', 5.975980599214031
+4, 5, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00005.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00006.png', 5.868000061408439
+5, 6, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00006.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00007.png', 5.557754786702047
+6, 7, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00007.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00008.png', 5.243153783884343
+7, 8, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00008.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00009.png', 6.3569840159594095
+8, 9, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00009.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00010.png', 6.188812168369226
+9, 10, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00010.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00011.png', 7.006729805032777
+10, 11, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00011.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00012.png', 7.112240361059829
+11, 12, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00012.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00013.png', 7.235898147598935
+12, 13, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00013.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00014.png', 7.611057710008687
+13, 14, './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00014.png', './GTEA61/flow_y_processed/S1/take_mustard/1/flow_y_00015.png', 7.010359035570414

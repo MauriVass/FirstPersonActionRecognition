@@ -1,0 +1,14 @@
+0, 1, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00001.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00002.png', 4.570435802202405
+1, 2, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00002.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00003.png', 4.733345305327804
+2, 3, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00003.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00004.png', 5.1599186357867
+3, 4, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00004.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00005.png', 5.585401296101658
+4, 5, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00005.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00006.png', 5.423368670386588
+5, 6, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00006.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00007.png', 5.556431399218167
+6, 7, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00007.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00008.png', 5.1959429550449405
+7, 8, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00008.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00009.png', 6.580014987977003
+8, 9, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00009.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00010.png', 6.413939364561002
+9, 10, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00010.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00011.png', 5.187342166199134
+10, 11, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00011.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00012.png', 6.200499231531881
+11, 12, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00012.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00013.png', 5.689421204808938
+12, 13, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00013.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00014.png', 6.429963022101584
+13, 14, './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00014.png', './GTEA61/flow_x_processed/S2/close_chocolate/1/flow_x_00015.png', 6.646739301850918

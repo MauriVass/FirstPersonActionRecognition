@@ -1,0 +1,9 @@
+0, 1, './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00001.png', './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00002.png', 6.556158118649419
+1, 2, './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00002.png', './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00003.png', 5.830352589033843
+2, 3, './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00003.png', './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00004.png', 5.6893772169720735
+3, 4, './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00004.png', './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00005.png', 5.657132470430782
+4, 5, './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00005.png', './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00006.png', 5.248320522954651
+5, 6, './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00006.png', './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00007.png', 6.447751189682621
+6, 7, './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00007.png', './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00008.png', 6.15791492635331
+7, 8, './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00008.png', './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00009.png', 7.282229251120532
+8, 9, './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00009.png', './GTEA61/flow_y_processed/S2/take_mustard/1/flow_y_00010.png', 6.48875826569553

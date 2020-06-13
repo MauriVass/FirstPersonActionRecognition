@@ -1,0 +1,16 @@
+0, 1, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00001.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00002.png', 5.0068468434924025
+1, 2, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00002.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00003.png', 5.001107217712896
+2, 3, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00003.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00004.png', 4.359208523514251
+3, 4, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00004.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00005.png', 4.217906506211673
+4, 5, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00005.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00006.png', 4.48119282713033
+5, 6, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00006.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00007.png', 4.648696876675799
+6, 7, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00007.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00008.png', 4.755588377780565
+7, 8, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00008.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00009.png', 4.660710166738912
+8, 9, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00009.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00010.png', 4.839418223362412
+9, 10, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00010.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00011.png', 5.184223979055322
+10, 11, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00011.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00012.png', 5.351951175182316
+11, 12, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00012.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00013.png', 5.1975927142174125
+12, 13, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00013.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00014.png', 5.296664619130578
+13, 14, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00014.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00015.png', 4.992406764522569
+14, 15, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00015.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00016.png', 4.672152154943899
+15, 16, './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00016.png', './GTEA61/flow_x_processed/S2/open_jam/1/flow_x_00017.png', 4.609993356697872

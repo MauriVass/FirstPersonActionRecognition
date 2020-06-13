@@ -1,0 +1,13 @@
+0, 1, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0002.png', 5.928031761876681
+1, 2, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0003.png', 5.787489862569908
+2, 3, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0004.png', 5.710224267559981
+3, 4, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0005.png', 5.700087043948416
+4, 5, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0006.png', 5.189233401183087
+5, 6, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0007.png', 5.069012710397919
+6, 7, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0008.png', 5.058493937839741
+7, 8, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0009.png', 5.042555752418044
+8, 9, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0010.png', 5.225275234230769
+9, 10, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0011.png', 5.262200089754086
+10, 11, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0012.png', 5.5446986868812225
+11, 12, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0013.png', 5.5744989041205075
+12, 13, './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0013.png', './GTEA61/processed_frames2/S1/pour_sugar,spoon,cup/1/rgb/rgb0014.png', 6.151326511515372

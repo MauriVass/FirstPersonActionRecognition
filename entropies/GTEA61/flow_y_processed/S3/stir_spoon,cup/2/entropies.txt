@@ -1,0 +1,4 @@
+0, 1, './GTEA61/flow_y_processed/S3/stir_spoon,cup/2/flow_y_00001.png', './GTEA61/flow_y_processed/S3/stir_spoon,cup/2/flow_y_00002.png', 4.822531559165338
+1, 2, './GTEA61/flow_y_processed/S3/stir_spoon,cup/2/flow_y_00002.png', './GTEA61/flow_y_processed/S3/stir_spoon,cup/2/flow_y_00003.png', 4.839128405050362
+2, 3, './GTEA61/flow_y_processed/S3/stir_spoon,cup/2/flow_y_00003.png', './GTEA61/flow_y_processed/S3/stir_spoon,cup/2/flow_y_00004.png', 5.6826604063494015
+3, 4, './GTEA61/flow_y_processed/S3/stir_spoon,cup/2/flow_y_00004.png', './GTEA61/flow_y_processed/S3/stir_spoon,cup/2/flow_y_00005.png', 5.4682712160880715

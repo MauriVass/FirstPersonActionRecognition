@@ -1,0 +1,16 @@
+0, 1, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00001.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00002.png', 4.844413392264806
+1, 2, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00002.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00003.png', 5.895651588442927
+2, 3, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00003.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00004.png', 5.365679694156032
+3, 4, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00004.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00005.png', 5.676517542424841
+4, 5, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00005.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00006.png', 4.466865005406103
+5, 6, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00006.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00007.png', 4.600560668444207
+6, 7, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00007.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00008.png', 4.317354834875709
+7, 8, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00008.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00009.png', 6.044540399384911
+8, 9, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00009.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00010.png', 4.639357099579661
+9, 10, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00010.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00011.png', 5.624350075787685
+10, 11, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00011.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00012.png', 6.455061939109562
+11, 12, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00012.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00013.png', 6.53100937889586
+12, 13, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00013.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00014.png', 5.977710705628542
+13, 14, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00014.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00015.png', 6.569009432627092
+14, 15, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00015.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00016.png', 6.215954446133418
+15, 16, './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00016.png', './GTEA61/flow_y_processed/S1/take_ketchup/1/flow_y_00017.png', 5.457663354335608

@@ -1,0 +1,12 @@
+0, 1, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0001.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0002.png', 5.488315640662063
+1, 2, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0002.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0003.png', 5.086282532370182
+2, 3, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0003.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0004.png', 5.015557424722497
+3, 4, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0004.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0005.png', 5.299706170352842
+4, 5, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0005.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0006.png', 5.098172512841215
+5, 6, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0006.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0007.png', 5.206671375967007
+6, 7, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0007.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0008.png', 4.996791212477161
+7, 8, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0008.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0009.png', 4.822904612491633
+8, 9, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0009.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0010.png', 4.794560833836065
+9, 10, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0010.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0011.png', 4.876118606394238
+10, 11, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0011.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0012.png', 5.026531812106714
+11, 12, './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0012.png', './GTEA61/processed_frames2/S2/pour_sugar,spoon,cup/4/rgb/rgb0013.png', 5.0597168278584705

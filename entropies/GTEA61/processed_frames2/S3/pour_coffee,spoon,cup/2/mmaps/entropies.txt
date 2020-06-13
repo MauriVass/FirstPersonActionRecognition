@@ -1,0 +1,15 @@
+0, 1, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0001.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0002.png', 0.31589295872535283
+1, 2, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0002.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0003.png', 0.26216342207255644
+2, 3, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0003.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0004.png', 0.22942222836634343
+3, 4, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0004.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0005.png', 0.26888992696912145
+4, 5, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0005.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0006.png', 0.25045159439190867
+5, 6, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0006.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0007.png', 0.24745635037027627
+6, 7, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0007.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0008.png', -0.0
+7, 8, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0008.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0009.png', -0.0
+8, 9, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0009.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0010.png', -0.0
+9, 10, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0010.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0011.png', 0.457737360217353
+10, 11, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0011.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0012.png', 0.3447250767473948
+11, 12, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0012.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0013.png', 0.2702409181843448
+12, 13, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0013.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0014.png', 0.26364390928849296
+13, 14, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0014.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0015.png', 0.279537680244362
+14, 15, './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0015.png', './GTEA61/processed_frames2/S3/pour_coffee,spoon,cup/2/mmaps/map0016.png', 0.3174883490215158

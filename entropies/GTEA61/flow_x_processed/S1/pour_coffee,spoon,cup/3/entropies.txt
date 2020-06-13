@@ -1,0 +1,12 @@
+0, 1, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00001.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00002.png', 5.451095378566055
+1, 2, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00002.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00003.png', 5.278589772455613
+2, 3, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00003.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00004.png', 5.725964582704416
+3, 4, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00004.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00005.png', 5.281693808639314
+4, 5, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00005.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00006.png', 5.2582308493598084
+5, 6, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00006.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00007.png', 5.085248319761663
+6, 7, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00007.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00008.png', 5.190679215676311
+7, 8, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00008.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00009.png', 5.730447440166381
+8, 9, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00009.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00010.png', 5.3172866892483786
+9, 10, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00010.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00011.png', 4.50463362265221
+10, 11, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00011.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00012.png', 5.447417517260323
+11, 12, './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00012.png', './GTEA61/flow_x_processed/S1/pour_coffee,spoon,cup/3/flow_x_00013.png', 4.786150775605593

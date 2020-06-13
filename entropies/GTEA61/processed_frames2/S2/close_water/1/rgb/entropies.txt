@@ -1,0 +1,12 @@
+0, 1, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0002.png', 6.003090883929786
+1, 2, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0003.png', 6.165257727227585
+2, 3, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0004.png', 6.28731731527082
+3, 4, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0005.png', 6.184219938849337
+4, 5, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0006.png', 6.044873145412502
+5, 6, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0007.png', 5.966828427556788
+6, 7, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0008.png', 5.84158879424205
+7, 8, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0009.png', 5.972483043879623
+8, 9, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0010.png', 6.585826342547593
+9, 10, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0011.png', 7.013586560365457
+10, 11, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0012.png', 7.046638473074931
+11, 12, './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S2/close_water/1/rgb/rgb0013.png', 7.13915515036999

@@ -1,0 +1,16 @@
+0, 1, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0002.png', 6.576971300561802
+1, 2, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0003.png', 6.264827054597074
+2, 3, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0004.png', 6.210113636501285
+3, 4, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0005.png', 6.150195997058129
+4, 5, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0006.png', 5.794758073975772
+5, 6, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0007.png', 5.630818032263249
+6, 7, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0008.png', 5.752874108089252
+7, 8, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0009.png', 5.588689576092343
+8, 9, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0010.png', 6.0519416841368265
+9, 10, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0011.png', 6.037568392674598
+10, 11, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0012.png', 6.072841311360027
+11, 12, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0013.png', 6.226365640740809
+12, 13, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0013.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0014.png', 6.22941726275774
+13, 14, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0014.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0015.png', 6.322351718132381
+14, 15, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0015.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0016.png', 6.687396836743593
+15, 16, './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0016.png', './GTEA61/processed_frames2/S2/take_water/1/rgb/rgb0017.png', 6.659216224365685

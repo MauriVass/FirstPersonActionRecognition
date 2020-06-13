@@ -1,0 +1,15 @@
+0, 1, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0002.png', 5.744552162691532
+1, 2, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0003.png', 5.832201067513032
+2, 3, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0004.png', 5.855939982730752
+3, 4, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0005.png', 5.351127886847297
+4, 5, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0006.png', 5.27646380869074
+5, 6, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0007.png', 5.636810050271655
+6, 7, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0008.png', 5.514114975429317
+7, 8, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0009.png', 5.075341951772535
+8, 9, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0010.png', 4.970065560540446
+9, 10, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0011.png', 4.924388031537699
+10, 11, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0012.png', 4.886673343388585
+11, 12, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0013.png', 5.152257259626293
+12, 13, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0013.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0014.png', 5.329860148179756
+13, 14, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0014.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0015.png', 4.8374659677318865
+14, 15, './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0015.png', './GTEA61/processed_frames2/S4/open_jam/1/rgb/rgb0016.png', 4.905380240414479

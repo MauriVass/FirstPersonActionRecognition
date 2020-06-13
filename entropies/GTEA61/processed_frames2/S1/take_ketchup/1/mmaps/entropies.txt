@@ -1,0 +1,16 @@
+0, 1, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0001.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0002.png', 0.2325958417998281
+1, 2, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0002.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0003.png', 0.26519623953952887
+2, 3, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0003.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0004.png', 0.24271714442260345
+3, 4, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0004.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0005.png', 0.26843889883206873
+4, 5, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0005.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0006.png', 0.3148850236735251
+5, 6, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0006.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0007.png', 0.3349377160933835
+6, 7, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0007.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0008.png', 0.3060907583890782
+7, 8, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0008.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0009.png', -0.0
+8, 9, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0009.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0010.png', -0.0
+9, 10, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0010.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0011.png', 0.3690045666721306
+10, 11, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0011.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0012.png', 0.27057817704513537
+11, 12, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0012.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0013.png', 0.23511363952616154
+12, 13, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0013.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0014.png', 0.2342357138177079
+13, 14, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0014.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0015.png', 0.32028754944974086
+14, 15, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0015.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0016.png', 0.3070781241660393
+15, 16, './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0016.png', './GTEA61/processed_frames2/S1/take_ketchup/1/mmaps/map0017.png', 0.3145022676843954

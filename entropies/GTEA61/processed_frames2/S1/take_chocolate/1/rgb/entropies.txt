@@ -1,0 +1,10 @@
+0, 1, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0002.png', 5.598120273929418
+1, 2, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0003.png', 5.785185551657007
+2, 3, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0004.png', 4.994410083651496
+3, 4, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0005.png', 5.107044024410372
+4, 5, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0006.png', 5.513381473884461
+5, 6, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0007.png', 5.029115984198954
+6, 7, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0008.png', 5.243787522483758
+7, 8, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0009.png', 5.200542254227292
+8, 9, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0010.png', 5.801815063318474
+9, 10, './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S1/take_chocolate/1/rgb/rgb0011.png', 6.097109494024809

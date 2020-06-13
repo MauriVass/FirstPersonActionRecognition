@@ -1,0 +1,12 @@
+0, 1, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00001.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00002.png', 5.358652380709281
+1, 2, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00002.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00003.png', 4.808999143852017
+2, 3, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00003.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00004.png', 5.369956973692121
+3, 4, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00004.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00005.png', 4.672887362484077
+4, 5, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00005.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00006.png', 4.2314671606282355
+5, 6, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00006.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00007.png', 3.9535547767567323
+6, 7, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00007.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00008.png', 3.7311500149139607
+7, 8, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00008.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00009.png', 3.6780270527192367
+8, 9, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00009.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00010.png', 3.2503491463399428
+9, 10, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00010.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00011.png', 4.4021773505131785
+10, 11, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00011.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00012.png', 3.8418552776428117
+11, 12, './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00012.png', './GTEA61/flow_x_processed/S3/pour_sugar,spoon,cup/3/flow_x_00013.png', 4.094958956468077

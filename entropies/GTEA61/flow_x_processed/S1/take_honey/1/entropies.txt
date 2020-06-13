@@ -1,0 +1,16 @@
+0, 1, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00001.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00002.png', 4.9788186377477945
+1, 2, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00002.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00003.png', 5.221968571697942
+2, 3, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00003.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00004.png', 5.267373758691659
+3, 4, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00004.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00005.png', 5.345549308966937
+4, 5, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00005.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00006.png', 5.089995880668467
+5, 6, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00006.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00007.png', 5.260828338549071
+6, 7, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00007.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00008.png', 5.452632323801
+7, 8, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00008.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00009.png', 5.627602537884674
+8, 9, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00009.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00010.png', 4.271690623187765
+9, 10, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00010.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00011.png', 3.860358624996782
+10, 11, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00011.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00012.png', 4.945495015836171
+11, 12, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00012.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00013.png', 4.750579451114756
+12, 13, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00013.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00014.png', 5.074981750725156
+13, 14, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00014.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00015.png', 5.687692126700873
+14, 15, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00015.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00016.png', 5.762397223308548
+15, 16, './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00016.png', './GTEA61/flow_x_processed/S1/take_honey/1/flow_x_00017.png', 6.1354856334584875

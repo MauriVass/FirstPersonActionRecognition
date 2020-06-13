@@ -1,0 +1,17 @@
+0, 1, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0002.png', 5.832398140485121
+1, 2, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0003.png', 6.398333527722015
+2, 3, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0004.png', 6.884066776237971
+3, 4, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0005.png', 6.306331711110785
+4, 5, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0006.png', 6.327918327241087
+5, 6, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0007.png', 6.270062085181396
+6, 7, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0008.png', 5.90308109430664
+7, 8, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0009.png', 5.367005497149679
+8, 9, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0010.png', 5.501183765403822
+9, 10, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0011.png', 5.91242809854858
+10, 11, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0012.png', 5.950839503721911
+11, 12, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0013.png', 6.622299152127129
+12, 13, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0013.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0014.png', 6.842061834607412
+13, 14, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0014.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0015.png', 6.549596000726964
+14, 15, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0015.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0016.png', 6.763128926936603
+15, 16, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0016.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0017.png', 6.819603446697358
+16, 17, './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0017.png', './GTEA61/processed_frames2/S3/take_peanut/1/rgb/rgb0018.png', 6.727559791366091

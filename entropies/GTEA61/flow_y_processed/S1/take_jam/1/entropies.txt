@@ -1,0 +1,14 @@
+0, 1, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00001.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00002.png', 4.866654525072664
+1, 2, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00002.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00003.png', 6.0712487469685605
+2, 3, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00003.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00004.png', 6.139967832224156
+3, 4, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00004.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00005.png', 5.07384239170952
+4, 5, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00005.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00006.png', 5.19633017584866
+5, 6, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00006.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00007.png', 5.8392719313263015
+6, 7, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00007.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00008.png', 6.262901669716587
+7, 8, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00008.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00009.png', 6.15702246383483
+8, 9, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00009.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00010.png', 5.827087541106962
+9, 10, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00010.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00011.png', 6.8457650542808
+10, 11, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00011.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00012.png', 6.60825426286648
+11, 12, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00012.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00013.png', 5.859948121440836
+12, 13, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00013.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00014.png', 5.888982107894405
+13, 14, './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00014.png', './GTEA61/flow_y_processed/S1/take_jam/1/flow_y_00015.png', 6.076722947179485

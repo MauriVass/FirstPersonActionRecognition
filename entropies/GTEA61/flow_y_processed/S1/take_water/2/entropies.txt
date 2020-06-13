@@ -1,0 +1,15 @@
+0, 1, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00001.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00002.png', 5.82974656041652
+1, 2, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00002.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00003.png', 5.76562861438706
+2, 3, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00003.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00004.png', 5.747165800567025
+3, 4, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00004.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00005.png', 5.55220967547644
+4, 5, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00005.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00006.png', 4.843864100391342
+5, 6, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00006.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00007.png', 5.690144243079568
+6, 7, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00007.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00008.png', 4.7699039510417585
+7, 8, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00008.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00009.png', 5.086301769840692
+8, 9, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00009.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00010.png', 5.5161025752170945
+9, 10, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00010.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00011.png', 5.299355531861314
+10, 11, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00011.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00012.png', 5.438751521582884
+11, 12, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00012.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00013.png', 5.2968080006225104
+12, 13, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00013.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00014.png', 5.454317406687337
+13, 14, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00014.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00015.png', 5.388606419879576
+14, 15, './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00015.png', './GTEA61/flow_y_processed/S1/take_water/2/flow_y_00016.png', 5.031901847015898

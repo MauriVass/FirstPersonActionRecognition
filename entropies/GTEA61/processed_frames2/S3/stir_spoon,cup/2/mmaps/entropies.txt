@@ -1,0 +1,3 @@
+0, 1, './GTEA61/processed_frames2/S3/stir_spoon,cup/2/mmaps/map0002.png', './GTEA61/processed_frames2/S3/stir_spoon,cup/2/mmaps/map0003.png', -0.0
+1, 2, './GTEA61/processed_frames2/S3/stir_spoon,cup/2/mmaps/map0003.png', './GTEA61/processed_frames2/S3/stir_spoon,cup/2/mmaps/map0004.png', -0.0
+2, 3, './GTEA61/processed_frames2/S3/stir_spoon,cup/2/mmaps/map0004.png', './GTEA61/processed_frames2/S3/stir_spoon,cup/2/mmaps/map0005.png', -0.0

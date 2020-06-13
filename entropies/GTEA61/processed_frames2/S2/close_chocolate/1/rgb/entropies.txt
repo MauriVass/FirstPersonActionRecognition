@@ -1,0 +1,14 @@
+0, 1, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0001.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0002.png', 5.886091022276502
+1, 2, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0002.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0003.png', 5.14477653358283
+2, 3, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0003.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0004.png', 5.798182361339626
+3, 4, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0004.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0005.png', 5.910438015271314
+4, 5, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0005.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0006.png', 5.5993277236758345
+5, 6, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0006.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0007.png', 5.9876842084070985
+6, 7, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0007.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0008.png', 6.282317027274597
+7, 8, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0008.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0009.png', 6.071073908091082
+8, 9, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0009.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0010.png', 6.494897361585066
+9, 10, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0010.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0011.png', 6.38262607518028
+10, 11, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0011.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0012.png', 6.446563207724186
+11, 12, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0012.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0013.png', 6.926801948063696
+12, 13, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0013.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0014.png', 6.618883031344626
+13, 14, './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0014.png', './GTEA61/processed_frames2/S2/close_chocolate/1/rgb/rgb0015.png', 6.267745722298335

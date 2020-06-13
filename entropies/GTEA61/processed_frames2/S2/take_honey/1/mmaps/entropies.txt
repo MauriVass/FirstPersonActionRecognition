@@ -1,0 +1,14 @@
+0, 1, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0001.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0002.png', 0.4861481516584989
+1, 2, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0002.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0003.png', 0.4565448516161577
+2, 3, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0003.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0004.png', 0.4904490080804384
+3, 4, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0004.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0005.png', 0.49992113723245546
+4, 5, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0005.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0006.png', 0.33594696032573707
+5, 6, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0006.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0007.png', -0.0
+6, 7, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0007.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0008.png', -0.0
+7, 8, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0008.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0009.png', -0.0
+8, 9, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0009.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0010.png', -0.0
+9, 10, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0010.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0011.png', 0.7206212289370462
+10, 11, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0011.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0012.png', 0.570353040791852
+11, 12, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0012.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0013.png', 0.4954249442681577
+12, 13, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0013.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0014.png', 0.5148864191880735
+13, 14, './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0014.png', './GTEA61/processed_frames2/S2/take_honey/1/mmaps/map0015.png', 0.5445036669952448

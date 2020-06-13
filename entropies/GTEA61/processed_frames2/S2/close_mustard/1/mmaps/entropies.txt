@@ -1,0 +1,15 @@
+0, 1, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0001.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0002.png', 0.14905670068926336
+1, 2, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0002.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0003.png', 0.13933369425182657
+2, 3, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0003.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0004.png', 0.25481877292666755
+3, 4, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0004.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0005.png', 0.29274510150468047
+4, 5, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0005.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0006.png', 0.4178530399709448
+5, 6, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0006.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0007.png', 0.4268779070778704
+6, 7, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0007.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0008.png', -0.0
+7, 8, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0008.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0009.png', -0.0
+8, 9, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0009.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0010.png', -0.0
+9, 10, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0010.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0011.png', 0.2137260690775822
+10, 11, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0011.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0012.png', 0.18150967688903716
+11, 12, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0012.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0013.png', 0.20742518403009952
+12, 13, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0013.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0014.png', 0.36246685155730585
+13, 14, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0014.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0015.png', 0.3429328155331455
+14, 15, './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0015.png', './GTEA61/processed_frames2/S2/close_mustard/1/mmaps/map0016.png', 0.4388095574313975

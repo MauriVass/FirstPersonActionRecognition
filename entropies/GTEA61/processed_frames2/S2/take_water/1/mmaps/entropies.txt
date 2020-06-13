@@ -1,0 +1,16 @@
+0, 1, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0001.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0002.png', 0.4182070756114173
+1, 2, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0002.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0003.png', 0.26455309590273224
+2, 3, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0003.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0004.png', 0.26644265970245284
+3, 4, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0004.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0005.png', 0.26227744065844266
+4, 5, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0005.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0006.png', 0.2593819892086436
+5, 6, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0006.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0007.png', 0.2992764717803538
+6, 7, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0007.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0008.png', 0.26900262938653074
+7, 8, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0008.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0009.png', -0.0
+8, 9, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0009.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0010.png', -0.0
+9, 10, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0010.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0011.png', 0.5557546832510084
+10, 11, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0011.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0012.png', 0.4263540027154765
+11, 12, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0012.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0013.png', 0.2730454715412032
+12, 13, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0013.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0014.png', 0.22537839891819958
+13, 14, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0014.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0015.png', 0.2759480124238074
+14, 15, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0015.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0016.png', 0.31349203103530066
+15, 16, './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0016.png', './GTEA61/processed_frames2/S2/take_water/1/mmaps/map0017.png', 0.3472718179215518

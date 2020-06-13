@@ -1,0 +1,17 @@
+0, 1, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00001.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00002.png', 6.961761472053496
+1, 2, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00002.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00003.png', 7.1533119474178495
+2, 3, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00003.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00004.png', 6.599929442760476
+3, 4, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00004.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00005.png', 6.830996851342647
+4, 5, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00005.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00006.png', 6.911767676848968
+5, 6, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00006.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00007.png', 6.633055277437371
+6, 7, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00007.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00008.png', 6.141100174541753
+7, 8, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00008.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00009.png', 5.7186621393515145
+8, 9, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00009.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00010.png', 4.685386111887579
+9, 10, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00010.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00011.png', 5.628783043844868
+10, 11, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00011.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00012.png', 4.459789888187593
+11, 12, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00012.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00013.png', 5.2908272827327485
+12, 13, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00013.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00014.png', 6.013353939370971
+13, 14, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00014.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00015.png', 6.867453202787664
+14, 15, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00015.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00016.png', 6.093322360600273
+15, 16, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00016.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00017.png', 7.427060042023591
+16, 17, './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00017.png', './GTEA61/flow_y_processed/S3/close_water/2/flow_y_00018.png', 7.247848942367464

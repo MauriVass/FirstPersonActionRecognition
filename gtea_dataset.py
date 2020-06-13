@@ -19,14 +19,14 @@ RGB_DIR = "processed_frames2"
 
 
 """"
-    Datasets are to be built by calling gtea61() and passing, among other arguments, 
+    Datasets are to be built by calling gtea61() and passing, among other arguments,
     the type of dataset to build.
     Allowed types are:
         rgb:    rgb frames
         flow:   warp-flow frames
         ms:     rgb + motion-segmentation frames
-        joint:  rgb + warp-flow frames for the joint training 
-    Note that if your RAM allows it, you can pass preload=True to preload the frames and 
+        joint:  rgb + warp-flow frames for the joint training
+    Note that if your RAM allows it, you can pass preload=True to preload the frames and
     speed up item retrieval during training.
 """
 
@@ -295,6 +295,20 @@ class GTEA61_MS(GTEA61):
         self.video_paths = []  # holds a path for each video
         self.build_metadata(RGB_DIR, self.video_paths)
         self.transform_ms = transform_ms
+
+        # Flow
+        self.split = split
+
+        if self.split == "train":
+            self.starting_seq = "random"
+        else:
+            self.starting_seq = "center"
+
+        self.video_x_paths = []  # holds a path for each x flow video
+        self.build_metadata(FLOW_X_DIR, self.video_x_paths)
+        self.video_y_paths = [path.replace("flow_x_processed", "flow_y_processed") for path in self.video_x_paths]
+        # - - - -
+
         if self.preloaded:
             self.loaded_frames = []  # holds preloaded sequences of images
             self.loaded_maps = []
@@ -305,19 +319,56 @@ class GTEA61_MS(GTEA61):
                 maps_path = os.path.join(video_instance_path, "mmaps")
                 self.loaded_maps.append(self.load_frames(maps_path, self.frame_sampler, "L"))
 
+            # Flow
+            self.loaded_x_frames = []
+            self.loaded_y_frames = []
+            for video_x_instance_path, video_y_instance_path in zip(self.video_x_paths, self.video_x_paths):
+                if self.starting_seq == "random":  # loads in all frames, will be sampled when requested
+                    x_frames = self.load_frames(video_x_instance_path, allin_frame_sampler, "L")
+                    y_frames = self.load_frames(video_y_instance_path, allin_frame_sampler, "L")
+                else:  # loads in only necessary frames
+                    x_frames = self.load_frames(video_x_instance_path, self.frame_sampler, "L", self.starting_seq)
+                    y_frames = self.load_frames(video_y_instance_path, self.frame_sampler, "L", self.starting_seq)
+                self.loaded_x_frames.append(x_frames)
+                self.loaded_y_frames.append(y_frames)
+            # - - - -
+
     def __getitem__(self, index):
         if self.preloaded:
             frames = self.loaded_frames[index]
             maps = self.loaded_maps[index]
+
+            # Flow
+            if self.starting_seq == "random":  # randomly sample the loaded frames
+                num_frames = len(self.loaded_x_frames[index])
+                sampled_frames = self.frame_sampler(0, num_frames, self.seq_len, "random")
+                stacked_frames = [frames[i] for i in sampled_frames for frames in (self.loaded_x_frames[index], self.loaded_y_frames[index])]
+            else:  # frames are loaded and sampled, just stack them
+                x_frames, y_frames = self.loaded_x_frames[index], self.loaded_y_frames[index]
+                stacked_frames = [frames[i] for i in range(len(x_frames)) for frames in (x_frames, y_frames)]
+            # - - - -
+
         else:
             frames = self.load_frames(os.path.join(self.video_paths[index], "rgb"), self.frame_sampler, "RGB")
             maps = self.load_frames(os.path.join(self.video_paths[index], "mmaps"), self.frame_sampler, "L")
+
+            # Flow
+            seed = time()
+            x_path, y_path = self.video_x_paths[index], self.video_y_paths[index]
+            x_frames = self.load_frames(x_path, self.frame_sampler, "L", self.starting_seq, seed)
+            y_frames = self.load_frames(y_path, self.frame_sampler, "L", self.starting_seq, seed)
+            stacked_frames = [frames[i] for i in range(len(x_frames)) for frames in (x_frames, y_frames)]
+            # - - - -
+
         self.transform.randomize_parameters()
         frames = [self.transform(image) for image in frames]
         maps = [self.transform_ms(image) for image in maps]
+        flow_frames = [self.transform(image, inv=True, flow=True) if i % 2 == 0 else self.transform(image, inv=False, flow=True) for i, image in enumerate(stacked_frames)]
         sequence = torch.stack(frames, 0)
         sequence_maps = torch.stack(maps, 0)
-        return sequence, sequence_maps, self.labels[index]
+        sequence_flow = torch.stack(flow_frames, 0).squeeze(1)
+
+        return sequence, sequence_maps, sequence_flow, self.labels[index]
 
     def __len__(self):
         return len(self.video_paths)

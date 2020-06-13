@@ -36,8 +36,9 @@ def pil_loader(path, image_type):  # type is eiter RGB or L
         img = Image.open(f)
         return img.convert(image_type)
 
-def entropy_based_frame_sampler(start, end, seq_len, path):
+def entropy_based_frame_sampler(start, end, seq_len, *args):
     random_value = random.random()
+    path = args[0]
 
     if random_value >= 0 and random_value <= 0.33:
 
@@ -52,12 +53,12 @@ def entropy_based_frame_sampler(start, end, seq_len, path):
         ]
 
         if (len(frames) < seq_len):
-          return uniform_frame_sampler(start, end, seq_len, path)
+          return uniform_frame_sampler(start, end, seq_len, *args)
 
         return np.array(sorted(frames))
 
     elif random_value > 0.33 and random_value <= 0.66:
-        return uniform_frame_sampler(start, end, seq_len, path)
+        return uniform_frame_sampler(start, end, seq_len, *args)
 
     elif random_value > 0.66 and random_value <= 1:
 
@@ -72,16 +73,16 @@ def entropy_based_frame_sampler(start, end, seq_len, path):
         ]
 
         if (len(frames) < seq_len):
-          return uniform_frame_sampler(start, end, seq_len, path)
+          return uniform_frame_sampler(start, end, seq_len, *args)
         return np.array(sorted(frames))
     return
 
 
-def uniform_frame_sampler(start, end, seq_len, path):
+def uniform_frame_sampler(start, end, seq_len, *args):
     return np.linspace(start, end, seq_len, endpoint=False, dtype=int)
 
 
-def sequential_frame_sampler(start, end, seq_len, starting_seq, seed=None):
+def sequential_frame_sampler(start, end, seq_len, starting_seq, seed=None, *args):
     # starting_frame mode is either first, center, or random
     if starting_seq == "first":
         return np.arange(start, seq_len)
@@ -95,7 +96,7 @@ def sequential_frame_sampler(start, end, seq_len, starting_seq, seed=None):
         return int(starting_frame) + np.arange(start, seq_len, dtype=int)
 
 
-def allin_frame_sampler(start, end, seq_len):
+def allin_frame_sampler(start, end, seq_len, *args):
     return list(range(start, end))
 
 
@@ -150,7 +151,7 @@ class GTEA61(VisionDataset):
         # loads the sequence of images for the video in path according to the frame_sampler
         frames = np.array(sorted(os.listdir(path)))
         frames_num = len(frames)
-        sampled_frames = frames[frame_sampler(0, frames_num, self.seq_len, *args)]
+        sampled_frames = frames[frame_sampler(0, frames_num, self.seq_len, path, *args)]
         return [pil_loader(os.path.join(path, file_path), image_type) for file_path in sampled_frames]
 
     def __getitem__(self, index):
@@ -353,7 +354,7 @@ class GTEA61_MS(GTEA61):
             maps = self.load_frames(os.path.join(self.video_paths[index], "mmaps"), self.frame_sampler, "L")
 
             # Flow
-            seed = time()
+            seed = time.time()
             x_path, y_path = self.video_x_paths[index], self.video_y_paths[index]
             x_frames = self.load_frames(x_path, self.frame_sampler, "L", self.starting_seq, seed)
             y_frames = self.load_frames(y_path, self.frame_sampler, "L", self.starting_seq, seed)

@@ -8,10 +8,45 @@ from itertools import permutations
 from numpy.random import randint
 import numpy as np
 
+def hamming_distance(perm1, perm2):
+    dist_counter = 0
+    equal_counter = 0
+    for n in range(len(perm1)):
+        if perm1[n] != perm2[n]:
+            dist_counter += 1
+        if(perm1[n] not in perm1):
+            equal_counter += 1
+    score = dist_counter + equal_counter/2
+    return score
 
-def gen_permutations(length, seq_len, num_permutations):
+def GetBestIndexPermutation(perm, num_permutations):
+    best = {}
+    for i in range(len(perm)):
+        for j in range(i):
+            d = hamming_distance(perm[i],perm[j])
+            best[(i,j)] = d
+
+    sorted_best = {k: v for k, v in sorted(best.items(), key=lambda item: -item[1])}
+
+    res = []
+    count = 0
+    for i,k in enumerate(sorted_best.keys()):
+        if(k[0] not in res):
+            res.append(k[0])
+            count += 1
+        if(count==num_permutations):
+            break
+
+    return np.array(res)
+
+def gen_permutations(length, seq_len, num_permutations, getBest):
     all_perm = np.array(list(permutations(range(seq_len), length)))
-    return all_perm[randint(len(all_perm), size=num_permutations)]
+    some_perm = all_perm[randint(len(all_perm), size=num_permutations)]
+    if(getBest):
+        indices = GetBestIndexPermutation(some_perm, num_permutations=num_permutations)
+        return some_perm[indices]
+    else:
+        return some_perm
 
 
 def to_relative_order(perms):
@@ -24,7 +59,7 @@ def to_relative_order(perms):
 
 
 class attentionModel(nn.Module):
-    def __init__(self, num_classes=61, mem_size=512, cam=True, ms=False, ms_task="classifier", ordering=True, order_type="rgb", perm_tuple_length=3, num_perms=10): # order_type "rgb" or "of"
+    def __init__(self, num_classes=61, mem_size=512, cam=True, ms=False, ms_task="classifier", ordering=True, order_type="rgb", perm_tuple_length=3, num_perms=10, getBestPermutation=False): # order_type "rgb" or "of"
         super(attentionModel, self).__init__()
         self.num_classes = num_classes
         self.resNet = resnetMod.resnet34(True, True)
@@ -39,6 +74,7 @@ class attentionModel(nn.Module):
         self.include_ms = ms
         self.ms_task = ms_task
         self.include_ordering = ordering
+        self.getBestPermutation = getBestPermutation
         if ms:
             self.ms_conv = nn.Sequential(nn.ReLU(), nn.Conv2d(512, 100, 1))
             if self.ms_task == "classifier":  # ms_task either classifier or regressor
@@ -66,7 +102,7 @@ class attentionModel(nn.Module):
             lstm_out_freq = 2
         perm_out = []
         seq_len = inputs.size(0)
-        perms = gen_permutations(self.perm_tuple_length, seq_len, self.num_perms)
+        perms = gen_permutations(self.perm_tuple_length, seq_len, self.num_perms, getBest=self.getBestPermutation)
         for perm in perms:
             perm_scores = []
             for index in perm:

@@ -51,7 +51,8 @@ config_stage2_ordering = Config({"stage": 2,
                                  "seq_len": 7,
                                  "training_user_split": [1, 3, 4],
                                  "val_user_split": [2],
-                                 "cam": True})
+                                 "cam": True,
+                                 "getBestPermutation": True})
 #%%
 
 def prepare_training_ms(config):
@@ -60,7 +61,7 @@ def prepare_training_ms(config):
     train_params_ordering = []
 
     model = attentionModel(num_classes=config.num_classes, mem_size=config.lstm_mem_size, cam=config.cam, ms=True, ms_task=config.ms_task,
-                           ordering=config.ordering, order_type=config.order_type, perm_tuple_length=config.perm_tuple_length, num_perms=config.num_perms)
+                           ordering=config.ordering, order_type=config.order_type, perm_tuple_length=config.perm_tuple_length, num_perms=config.num_perms, getBestPermutation=config.getBestPermutation)
     stage1_dict = os.path.join(config.models_dir , 'best_model_rgb_state_dict.pth')
     model.load_state_dict(torch.load(stage1_dict), strict=False)
     model.train(False)

@@ -40,6 +40,7 @@ config_stage2_ordering = Config({"stage": 2,
                                  "lstm_mem_size": 512,
                                  "lr": 1e-4,
                                  "ms_lr": 1e-5,
+                                 "ordering_lr": 1e-5,
                                  "optimizer": "adam",
                                  "epochs": 170,
                                  "decay_steps": [100, 150],
@@ -56,6 +57,7 @@ config_stage2_ordering = Config({"stage": 2,
 def prepare_training_ms(config):
     train_params_rgb = []
     train_params_ms = []
+    train_params_ordering = []
 
     model = attentionModel(num_classes=config.num_classes, mem_size=config.lstm_mem_size, cam=config.cam, ms=True, ms_task=config.ms_task,
                            ordering=config.ordering, order_type=config.order_type, perm_tuple_length=config.perm_tuple_length, num_perms=config.num_perms)
@@ -120,7 +122,15 @@ def prepare_training_ms(config):
         params.requires_grad = True
         train_params_rgb += [params]
 
-    return model, train_params_rgb, train_params_ms
+    for params in model.ordering_lstm_cell.parameters():
+        params.requires_grad = True
+        train_params_ordering += [params]
+
+    for params in model.order_classifier.parameters():
+        params.requires_grad = True
+        train_params_ordering += [params]
+
+    return model, train_params_rgb, train_params_ms, train_params_ordering
 
 
 def training_ms(model, config, train_loader, val_loader):
@@ -310,7 +320,7 @@ val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=config.batch_si
 # %% TRAINING STAGE 2 MS
 config = config_stage2_ordering
 
-model, train_params_rgb, train_params_ms = prepare_training_ms(config)
+model, train_params_rgb, train_params_ms, train_params_ordering = prepare_training_ms(config)
 model.lstm_cell.train(True)
 model.classifier.train(True)
 
@@ -324,7 +334,7 @@ else:
     loss_fn_ms = nn.MSELoss()
 loss_fn_ordering = nn.CrossEntropyLoss()
 
-optimizer_fn = torch.optim.Adam([{'params': train_params_rgb}, {'params': train_params_ms, 'lr': config.ms_lr}], lr=config.lr, weight_decay=config.weight_decay, eps=1e-4)
+optimizer_fn = torch.optim.Adam([{'params': train_params_rgb}, {'params': train_params_ms, 'lr': config.ms_lr}, {'params': train_params_ordering, 'lr': config.ms_lr}], lr=config.lr, weight_decay=config.weight_decay, eps=1e-4)
 optim_scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer_fn, milestones=config.decay_steps, gamma=config.decay_factor)
 
 

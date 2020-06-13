@@ -8,8 +8,9 @@ from itertools import permutations
 from numpy.random import randint
 import numpy as np
 
-def gen_permutations(length, end, num_permutations):
-    all_perm = np.array(list(permutations(range(end), length)))
+
+def gen_permutations(length, seq_len, num_permutations):
+    all_perm = np.array(list(permutations(range(seq_len), length)))
     return all_perm[randint(len(all_perm), size=num_permutations)]
 
 
@@ -48,6 +49,7 @@ class attentionModel(nn.Module):
                 # for classification, fc outputs 2*49 (49 samples, 2 classes) and forwards it to softmax to compute confidence scores (or does it?)
                 # for regression, fc outputs the predictions straight away (49 samples)
         if self.include_ordering:
+            self.ordering_lstm_cell = MyConvLSTMCell(512, mem_size)
             self.order_type = order_type
             self.perm_tuple_length = perm_tuple_length
             self.num_perms = num_perms
@@ -57,7 +59,6 @@ class attentionModel(nn.Module):
     def forward_order(self, inputs):
         state = (Variable(torch.zeros((inputs.size(1), self.mem_size, 7, 7)).cuda()),
                  Variable(torch.zeros((inputs.size(1), self.mem_size, 7, 7)).cuda()))
-        order_out = []
         batch_size = inputs.size(1)
         if self.order_type == "rgb":
             lstm_out_freq = 1
@@ -70,7 +71,7 @@ class attentionModel(nn.Module):
             perm_scores = []
             for index in perm:
                 logit, feature_conv, feature_convNBN = self.resNet(inputs[index])
-                state = self.lstm_cell(feature_convNBN, state)
+                state = self.ordering_lstm_cell(feature_convNBN, state)
                 if (index+1) % lstm_out_freq == 0:
                     feats = self.avgpool(state[1]).view(state[1].size(0), -1)  # state[1] is BSx512x7x7, feats1 is BSx512
                     feats = self.order_classifier(feats)  # BS x perm_tuple_length

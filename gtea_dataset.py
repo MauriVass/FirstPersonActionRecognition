@@ -19,14 +19,14 @@ RGB_DIR = "processed_frames2"
 
 
 """"
-    Datasets are to be built by calling gtea61() and passing, among other arguments,
+    Datasets are to be built by calling gtea61() and passing, among other arguments, 
     the type of dataset to build.
     Allowed types are:
         rgb:    rgb frames
         flow:   warp-flow frames
         ms:     rgb + motion-segmentation frames
-        joint:  rgb + warp-flow frames for the joint training
-    Note that if your RAM allows it, you can pass preload=True to preload the frames and
+        joint:  rgb + warp-flow frames for the joint training 
+    Note that if your RAM allows it, you can pass preload=True to preload the frames and 
     speed up item retrieval during training.
 """
 
@@ -81,7 +81,7 @@ def uniform_frame_sampler(start, end, seq_len, path):
     return np.linspace(start, end, seq_len, endpoint=False, dtype=int)
 
 
-def sequential_frame_sampler(start, end, seq_len, starting_seq, path, seed=None):
+def sequential_frame_sampler(start, end, seq_len, starting_seq, seed=None):
     # starting_frame mode is either first, center, or random
     if starting_seq == "first":
         return np.arange(start, seq_len)
@@ -104,7 +104,7 @@ def gtea61(data_type, root, split='train', user_split=None, seq_len_rgb=7, seq_l
     if user_split is None:
         #  select users to source data from (out of [S1, S2, S3, S4])
         #  if no split is provided, it defaults to standard split
-        if split == "train":
+        if split == "trian":
             user_split = [1, 3, 4]
         else:
             user_split = [2]
@@ -150,7 +150,7 @@ class GTEA61(VisionDataset):
         # loads the sequence of images for the video in path according to the frame_sampler
         frames = np.array(sorted(os.listdir(path)))
         frames_num = len(frames)
-        sampled_frames = frames[frame_sampler(0, frames_num, self.seq_len, path, *args)]
+        sampled_frames = frames[frame_sampler(0, frames_num, self.seq_len, *args)]
         return [pil_loader(os.path.join(path, file_path), image_type) for file_path in sampled_frames]
 
     def __getitem__(self, index):
@@ -158,6 +158,9 @@ class GTEA61(VisionDataset):
 
     def __len__(self):
         raise NotImplementedError  # MUST override
+
+
+
 
 class GTEA61_RGB(GTEA61):
     def __init__(self, root, split, user_split, seq_len, preload=False, transform=None, target_transform=None, frame_sampler=None):
@@ -210,6 +213,7 @@ class GTEA61Flow(GTEA61):
         self.video_x_paths = []  # holds a path for each x flow video
         self.build_metadata(FLOW_X_DIR, self.video_x_paths)
         self.video_y_paths = [path.replace("flow_x_processed", "flow_y_processed") for path in self.video_x_paths]
+
 
         if self.preloaded:
             self.loaded_x_frames = []

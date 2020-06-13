@@ -169,6 +169,9 @@ class GTEA61_RGB(GTEA61):
         # such callback is to generate indices corresponding to the frames to be sampled
         if frame_sampler is None:
             self.frame_sampler = uniform_frame_sampler
+        elif frame_sampler == "entropy_based":
+            self.frame_sampler = entropy_based_frame_sampler
+
         self.video_paths = []  # holds a path for each video
         self.build_metadata(RGB_DIR, self.video_paths)
 
@@ -200,6 +203,9 @@ class GTEA61Flow(GTEA61):
         self.split = split
         if frame_sampler is None:
             self.frame_sampler = sequential_frame_sampler
+        elif frame_sampler == "entropy_based":
+            self.frame_sampler = entropy_based_frame_sampler
+
         if self.split == "train":
             self.starting_seq = "random"
         else:
@@ -283,6 +289,9 @@ class GTEA61_MS(GTEA61):
         # such callback is to generate indices corresponding to the frames to be sampled
         if frame_sampler is None:
             self.frame_sampler = uniform_frame_sampler
+        elif frame_sampler == "entropy_based":
+            self.frame_sampler = entropy_based_frame_sampler
+
         self.video_paths = []  # holds a path for each video
         self.build_metadata(RGB_DIR, self.video_paths)
         self.transform_ms = transform_ms

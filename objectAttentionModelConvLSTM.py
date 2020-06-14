@@ -43,7 +43,7 @@ def gen_permutations(length, seq_len, num_permutations, getBest):
     all_perm = np.array(list(permutations(range(seq_len), length)))
     some_perm = all_perm[randint(len(all_perm), size=num_permutations)]
     if(getBest):
-        indices = GetBestIndexPermutation(some_perm, num_permutations=num_permutations)
+        indices = GetBestIndexPermutation(some_perm, num_permutations=int(num_permutations/2))
         return some_perm[indices]
     else:
         return some_perm

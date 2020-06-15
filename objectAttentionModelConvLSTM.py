@@ -16,7 +16,7 @@ def hamming_distance(perm1, perm2):
             dist_counter += 1
         if(perm1[n] not in perm1):
             equal_counter += 1
-    score = dist_counter + equal_counter/2
+    score = dist_counter + equal_counter
     return score
 
 def GetBestIndexPermutation(perm, num_permutations):

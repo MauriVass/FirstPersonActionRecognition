@@ -41,12 +41,12 @@ def GetBestIndexPermutation(perm, num_permutations):
 
 def gen_permutations(length, seq_len, num_permutations, getBest):
     all_perm = np.array(list(permutations(range(seq_len), length)))
-    some_perm = all_perm[randint(len(all_perm), size=num_permutations)]
     if(getBest):
-        indices = GetBestIndexPermutation(some_perm, num_permutations=int(num_permutations/2))
+        some_perm = all_perm[randint(len(all_perm), size=num_permutations*2)]
+        indices = GetBestIndexPermutation(some_perm, num_permutations=num_permutations)
         return some_perm[indices]
     else:
-        return some_perm
+        return all_perm[randint(len(all_perm), size=num_permutations)]
 
 
 def to_relative_order(perms):
